@@ -7,9 +7,6 @@
 body{
    background-color: rgba(170, 170, 170, 0.01);
 }
-header{
-    border: 2px solid salmon;
-}
 
 .navbar{
     justify-content: space-between;
@@ -17,7 +14,6 @@ header{
     max-width: 85%;
     margin: 0 auto;
     padding: 20px 10px ;
-    border: 2px solid black;
 }
 
 .nav{
@@ -42,7 +38,6 @@ header{
     margin: 20px auto;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid blue;
 }
 
 .banner h1{
@@ -95,7 +90,6 @@ main{
 /* section company container */
 .company-container{
     background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
-    border: 2px solid black;
     display:flex;
     align-items: center;
     /* justify-content: space-around; */
@@ -111,6 +105,68 @@ main{
     gap: 50px;
     
 }
+
+
+/* populer section */
+.popular-collection{
+    position: relative;
+}
+.populer{
+    text-align: center;
+    color: rgb(58, 58, 58);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 100px;
+}
+.popular-card-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 50px auto;
+        gap: 15px;
+        border: 2px solid salmon;
+       
+}
+
+.card{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid rgb(82, 28, 151);
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(24, 25, 31);
+    margin: 20px 0 10px;
+}
+.product-price{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.star{
+    margin: 10px 0;
+}
+.star i{
+    color: rgb(251, 130, 0);
+}
+
+.card img{
+    width: 100%;
+}
+
+.see a{
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 700;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.see{
+    text-align: right;
+}
+
 
 /* responsive for mobile */
 @media screen and (max-width:576px) {
@@ -158,6 +214,16 @@ main{
         width: 100%;
     } 
     
+    .popular-card-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .see{
+    text-align: center;
+    margin: 20px 0;
+    }
+
 
 
 }
