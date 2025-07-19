@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+
+body{
+   background-color: rgba(170, 170, 170, 0.01);
+}
+header{
+    border: 2px solid salmon;
+}
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 20px 10px ;
+    border: 2px solid black;
+}
+
+.nav{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.nav-2{
+    gap: 30px;
+}
+.nav-2 a{
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    font-weight: 600;
+}
+
+
+/* banner */
+.banner{
+    max-width: 85%;
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid blue;
+}
+
+.banner h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(58, 58, 58);
+}
+
+.banner-description{
+    max-width: 50%;
+}
+
+.banner-description p{
+    margin: 20px 0;
+}
+
+.btn-prebook{
+    background-color: rgb(224, 44, 109);
+    border-radius: 40px;
+    padding: 10px 20px;
+    border: none;
+}
+
+.banner-img{
+    background-image:url(images/Circle\ design.svg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* shared style */
+.flex-display{
+    display: flex;
+}
+
+.primary-text-color{
+    color: rgb(58, 58, 58);
+}
+
+
+/* responsive for mobile */
+@media screen and (max-width:576px) {
+    .navbar,
+    .banner
+    {
+        flex-direction: column;
+    }
+}
+
