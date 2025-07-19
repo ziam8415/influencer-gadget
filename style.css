@@ -85,6 +85,32 @@ header{
     color: rgb(58, 58, 58);
 }
 
+/* main */
+main{
+    max-width: 85%;
+    margin: 10px auto;
+    border: 2px solid saddlebrown;
+}
+
+/* section company container */
+.company-container{
+    background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+    border: 2px solid black;
+    display:flex;
+    align-items: center;
+    /* justify-content: space-around; */
+     justify-content: space-between;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.company-container div{
+    display: flex;
+     align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    
+}
 
 /* responsive for mobile */
 @media screen and (max-width:576px) {
@@ -119,6 +145,19 @@ header{
     max-width: 100%;
     border: 2px solid salmon;
     }
+
+    main{
+        max-width: 100%;
+    }
+    .company-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .company img{
+        width: 100%;
+    } 
+    
 
 
 }
