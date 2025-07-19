@@ -71,6 +71,9 @@ header{
     background-size: contain;
     background-repeat: no-repeat;
 }
+.banner-img img{
+    width: 100%;
+}
 
 
 /* shared style */
@@ -90,5 +93,33 @@ header{
     {
         flex-direction: column;
     }
+    
+    .navbar{
+        max-width: 100%;
+        padding: 0%;
+        margin: 0%;
+        gap: 10px;
+    }
+    .nav{
+    font-size: 1.5rem;
+    }
+    .nav-2{
+        gap: 10px;
+    }
+    .banner{
+        max-width: 100%;
+        margin: 10px 0;
+        text-align: center;
+        gap: 30px;
+    }
+    .banner h1{
+    font-size: 1.6rem;
+    }
+    .banner-description{
+    max-width: 100%;
+    border: 2px solid salmon;
+    }
+
+
 }
 
